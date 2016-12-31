@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:app2=""
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:text="View Classes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="39dp"
+        android:textAppearance="@android:style/TextAppearance.Material.DialogWindowTitle"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:id="@+id/viewclasses"
+        android:layout_width="190dp"
+        android:layout_height="60dp"
+        app:srcCompat="?android:attr/actionModePasteDrawable"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/textView6"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:scaleType="fitCenter" />
+
+    <ImageButton
+        android:id="@+id/setalarm"
+        android:layout_width="190dp"
+        android:layout_height="60dp"
+        app:srcCompat="@android:drawable/ic_lock_idle_alarm"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/viewclasses"
+        android:layout_alignStart="@+id/viewclasses"
+        style="@android:style/Widget.Material.ImageButton"
+        android:tint="@android:color/background_light"
+        android:scaleType="fitCenter"
+        android:elevation="0dp" />
+
+    <ImageButton
+        android:id="@+id/deleteclass"
+        android:layout_width="190dp"
+        android:layout_height="60dp"
+        app:srcCompat="@android:drawable/ic_menu_delete"
+        android:layout_marginTop="23dp"
+        android:backgroundTint="@android:color/holo_green_dark"
+        android:tint="@android:color/background_dark"
+        android:scaleType="fitCenter"
+        android:layout_below="@+id/setalarm"
+        android:layout_alignStart="@+id/setalarm" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:text="Delete class"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@android:style/TextAppearance.Material.DialogWindowTitle"
+        android:layout_marginTop="14dp"
+        android:layout_alignTop="@+id/deleteclass"
+        android:layout_alignStart="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:text="Set Alarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="@android:style/TextAppearance.Material.DialogWindowTitle"
+        android:layout_alignTop="@+id/setalarm"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_marginTop="17dp" />
+
+</RelativeLayout>
